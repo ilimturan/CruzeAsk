@@ -59,8 +59,8 @@ public class MainActivity extends ActionBarActivity {
         });
         ws = wv.getSettings();
         ws.setJavaScriptEnabled(true);
+        ws.setDefaultTextEncodingName("UTF-8");
         wv.loadUrl("http://cruzeask.com/");
-        //wv.canGoBack(false);
 
     }
 
