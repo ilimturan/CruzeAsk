@@ -17,6 +17,7 @@ public class MainActivity extends ActionBarActivity {
     private ProgressBar pbr;
     private WebView wv;
     private WebSettings ws;
+    private String webUrl = "http://cruzeask.com/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +61,7 @@ public class MainActivity extends ActionBarActivity {
         ws = wv.getSettings();
         ws.setJavaScriptEnabled(true);
         ws.setDefaultTextEncodingName("UTF-8");
-        wv.loadUrl("http://cruzeask.com/");
+        wv.loadUrl(webUrl);
 
     }
 
